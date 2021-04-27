@@ -1,0 +1,28 @@
+.bg-svg {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    overflow: hidden;
+    width: 100%;
+}
+
+.bg-svg:nth-child(1) {
+    display: block;
+    min-height: 100%;
+}
+
+.bg-svg:nth-child(2) {
+    display: none;
+}
+
+@media (min-width: 1000px) {
+    .bg-svg:nth-child(1) {
+        display: none;
+    }
+
+    .bg-svg:nth-child(2) {
+        display: block;
+        min-height: 100vh;
+    }
+}

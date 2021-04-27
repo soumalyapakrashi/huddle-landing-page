@@ -1,0 +1,40 @@
+.social a {
+    color: white;
+    border: 1px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+}
+
+.icon {
+    color: white;
+    transition: 0.07s linear;
+}
+
+.social {
+    display: flex;
+    gap: 20px;
+    width: fit-content;
+}
+
+.social a {
+    transition: 0.07s linear;
+}
+
+.social a:hover {
+    border-color: var(--color-magenta);
+}
+
+.social a:hover .icon {
+    color: var(--color-magenta);
+}
+
+@media (min-width: 1000px) {
+    .social a {
+        height: 45px;
+        width: 45px;
+    }
+}
